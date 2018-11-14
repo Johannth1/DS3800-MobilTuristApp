@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="main">
+
+    <ion-title>OsloG</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openSettings()">
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row id="item-1">
+      <ion-col id="Sightseeing" (click)="goToSightseeing()">
+        <div class="button">Sightseeing</div>
+      </ion-col>
+    </ion-row>
+    <ion-row id="item-2">
+      <ion-col id="Shopping" (click)="goToShopping()">
+            <div class="button">Shopping</div>
+      </ion-col>
+    </ion-row>
+    <ion-row id="item-3">
+        <ion-col id="Food" (click)="goToFood()">
+              <div class="button">Food</div>
+        </ion-col>
+      </ion-row>
+      <ion-row id="item-4">
+          <ion-col id="schedule" (click)="goToSchedule()">
+                <div class="button">Schedule</div>
+          </ion-col>
+        </ion-row>
+  </ion-grid>
+</ion-content>
