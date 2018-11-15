@@ -25,9 +25,8 @@ export class ListPage {
   }
 
   goToDetail(){
-    let data = {
+    let data = {  };
     this.navCtrl.push("DetailPage", data);
-  }
 }
 
   ionViewDidLoad() {
