@@ -6,8 +6,16 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Operaen</ion-title>
+  <ion-navbar color={{navbarColor}}>
+
+    <ion-title>{{pageTitle}}</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openSettings()">
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
+
   </ion-navbar>
 
 </ion-header>
@@ -15,27 +23,31 @@
 
 <ion-content no-padding>
 <ion-grid no-padding>
+
   <ion-row>
   <ion-col>
-    <img alt="operaen" src="assets/imgs/opera.jpg">
+    <div>
+  <img alt="operaen" height="235px" src="assets/imgs/opera.jpg">
+  <p></p>
+   </div>
   </ion-col>
   </ion-row>
 
-  <ion-row class="items">
+  <ion-row class="items-1">
   <ion-col>
-    <div id="item-1">yo</div>
+    <div id="item">Rating</div>
   </ion-col>
   </ion-row>
 
-  <ion-row class="items">
+  <ion-row class="items-2">
   <ion-col>
-        <div id="item-2">yo</div>
+        <div id="item">Rating</div>
   </ion-col>
   </ion-row>
 
-  <ion-row class="items">
+  <ion-row class="items-3">
   <ion-col>
-        <div id="item-3">yo</div>
+        <div id="item">Rating</div>
   </ion-col>
   </ion-row>
 
