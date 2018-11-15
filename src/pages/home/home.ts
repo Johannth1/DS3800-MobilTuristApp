@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { ListPage } from '../pages/list/list';
+//import { ListPage } from '../pages/list/list';
 
 @Component({
   selector: 'page-home',
@@ -26,16 +26,6 @@ export class HomePage {
           title: "Vigelandsparken",
           desc: "Something about Vigelandsparken",
           src: "assets/imgs/vigelandsparken.jpg"
-        },
-        {
-          title: "Viking Museum",
-          desc: "Something about Viking Museum",
-          src: "assets/imgs/vikingmuseum.jpg"
-        },
-        {
-          title: "Viking Museum",
-          desc: "Something about Viking Museum",
-          src: "assets/imgs/vikingmuseum.jpg"
         },
         {
           title: "Viking Museum",

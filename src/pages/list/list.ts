@@ -24,9 +24,15 @@ export class ListPage {
 
   }
 
+  goToDetail(){
+    let data = {
+    this.navCtrl.push("DetailPage", data);
+  }
+}
+
   ionViewDidLoad() {
     this.navbarColor = this.navParams.get("navbarColor") || "main";
-    this.pageTitle = this.navParams.get("pageTitle") || "OsloG";
+    this.pageTitle = this.navParams.get("pageTitle") || "Luxing";
     this.items = this.navParams.get("items");
     //console.log(this.sights[0].title);
   }
