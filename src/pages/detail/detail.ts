@@ -22,8 +22,8 @@ export class DetailPage {
 
   ionViewDidLoad() {
     setTimeout(() =>
-    this.slides.slideTo(1,200)
-    ,100);
+    this.slides.slideTo(1,300)
+    ,300);
     console.log('ionViewDidLoad DetailPage');
   }
 
