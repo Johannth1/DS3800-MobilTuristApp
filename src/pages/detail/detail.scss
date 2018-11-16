@@ -12,12 +12,12 @@ page-detail {
   background-color: #6F5060;
 }
 .items-2{
-  height: 21%;
+  height: 20.5%;
   width: 100%;
   background-color: #866979;
 }
 .items-3{
-  height: 21%;
+  height: 20.5%;
   width: 100%;
   background-color: #A78682;
 }
@@ -25,10 +25,45 @@ page-detail {
 #item{
 position: absolute;
 top:50%;
+width: 70%;
 left:50%;
 transform: translate(-50%,-50%);
 color: white;
-font-size: 32px;
+font-size: 20px;
+}
+
+#itemImg{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 34px;
+}
+
+.imgBox{
+  height: 38.5%;
+  width: 100%;
+}
+#starPosition{
+  position: absolute;
+  left: 53%;
+  top: 5%;
+}
+
+#votes{
+  font-size: 16px;
+}
+#imgCol{
+  height: 100%;
+  width: 100%;
+}
+
+#arrowLeft{
+  right: 120%;
+}
+#arrowRight{
+   left: 120%;
 }
 
 }
