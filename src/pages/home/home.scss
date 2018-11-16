@@ -61,7 +61,15 @@ page-home {
    width:100%;
    color: white;
    font-size: 32px;
-
-
+   text-shadow: 6px, 6px black;
+ }
+ .icons{
+   position: absolute;
+   left:10%;
+   top:30%;
+   filter: drop-shadow(5px 5px 10px black);
+}
+ .font{
+    text-shadow: 7px 7px 15px black;
  }
 }
