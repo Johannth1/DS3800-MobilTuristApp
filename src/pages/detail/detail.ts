@@ -33,7 +33,6 @@ export class DetailPage {
     setTimeout(() =>
     this.slides.slideTo(1,300)
     ,300);
-<<<<<<< HEAD
     console.log(this.mapRef,'ionViewDidLoad DetailPage');
   }
 
@@ -46,8 +45,6 @@ export class DetailPage {
     }
 
     this.map = new google.maps.Map(this.mapRef.nativeElement, options);
-=======
->>>>>>> e9f782ef3bb8354a7c1f1273bbba1763fc5eb653
   }
 
   addToSchedule(){
