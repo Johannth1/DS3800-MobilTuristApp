@@ -73,6 +73,14 @@ font-size: 20px;
 #arrowRight{
    left: 150%;
 }
+#heart{
+  position: absolute;
+  font-size: 54px;
+  top:30%;
+  left:50%;
+  transform: translate(-50%,-50%);
+   color: rgb(215, 60, 121);
+}
 
 .swiper-pagination-bullet{
   background: #AA5371;
@@ -85,6 +93,10 @@ font-size: 20px;
 .slide-zoom{
   width: 100%;
   height: 100%;
+}
+
+.swiper-slide img{
+  width:100%;
 }
 
 }
