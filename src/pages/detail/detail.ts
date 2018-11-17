@@ -1,6 +1,7 @@
 
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
+import { DataProvider } from '../../providers/data/data';
 
 /**
  * Generated class for the DetailPage page.
@@ -20,7 +21,11 @@ export class DetailPage {
   @ViewChild('map') mapRef: ElementRef;
   map:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  itemData;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public data: DataProvider) {
+    this.itemData = this.data.getObject(this.navParams.get("title"));
+    console.log(this.itemData);
   }
 
   ionViewDidLoad() {
@@ -28,6 +33,7 @@ export class DetailPage {
     setTimeout(() =>
     this.slides.slideTo(1,300)
     ,300);
+<<<<<<< HEAD
     console.log(this.mapRef,'ionViewDidLoad DetailPage');
   }
 
@@ -40,6 +46,14 @@ export class DetailPage {
     }
 
     this.map = new google.maps.Map(this.mapRef.nativeElement, options);
+=======
+>>>>>>> e9f782ef3bb8354a7c1f1273bbba1763fc5eb653
   }
 
+  addToSchedule(){
+    console.log("itemData before push: " + this.itemData);
+    console.log(this.data.getObject(this.navParams.get("title")));
+    this.data.pushToSchedule(this.data.getObject(this.navParams.get("title")));
+    console.log(this.data.scheduleList);
+  }
 }

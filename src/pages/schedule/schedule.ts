@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
 
 /**
- * Generated class for the ListPage page.
+ * Generated class for the SchedulePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,24 +11,23 @@ import { DataProvider } from '../../providers/data/data';
 
 @IonicPage()
 @Component({
-  //selector: 'test-this',
-  selector: 'page-list',
-  templateUrl: 'list.html',
+  selector: 'page-schedule',
+  templateUrl: 'schedule.html',
 })
-export class ListPage {
+export class SchedulePage {
+
   items: Array<String> = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public data: DataProvider) {
-
+    this.items = this.data.scheduleList;
+    console.log(this.data.scheduleList);
+    console.log(this.items);
   }
-
-  goToDetail(item){
-    this.navCtrl.push("DetailPage", item);
-}
 
   ionViewDidLoad() {
-    this.items = this.data.list;
-    console.log(this.data.list);
+
   }
+
+
 
 }
