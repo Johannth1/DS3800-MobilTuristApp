@@ -1,15 +1,8 @@
-<!--
-  Generated template for the ListPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-
 <ion-header>
 
-  <ion-navbar color={{data.categoryTitle}}>
+  <ion-navbar color={{this.data.categoryTitle}}>
 
-    <ion-title>{{data.categoryTitle}}</ion-title>
+    <ion-title>{{this.data.categoryTitle}}</ion-title>
 
     <ion-buttons end>
       <button ion-button icon-only (click)="openSettings()">
@@ -27,7 +20,7 @@
     <ion-grid>
       <ion-row class="item" *ngFor="let ngItem of items">
         <ion-col>
-          <div class="imgBox" (click)="goToDetail(ngItem)">
+          <div class="imgBox">
             <img class="cover" src={{ngItem.src}} alt="">
             <div class="text-block">
               <h4>{{ngItem.title || "SampleText"}}</h4>

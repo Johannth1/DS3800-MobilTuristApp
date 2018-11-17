@@ -8,7 +8,7 @@
 
   <ion-navbar color=main>
 
-    <ion-title>Luxing</ion-title>
+    <ion-title>{{itemData.title}}</ion-title>
 
     <ion-buttons end>
       <button ion-button icon-only (click)="openSettings()">
@@ -22,62 +22,62 @@
 
 
 <ion-content no-padding>
-<ion-grid no-padding>
+  <ion-grid no-padding>
 
-  <ion-row class="imgBox">
-  <ion-col id="imgCol">
-    <ion-slides pager>
-      <ion-slide>
-        yo
-      </ion-slide>
-      <ion-slide>
-    <img alt="operaen" height="235px" src="assets/imgs/opera.jpg">
-    <div id="itemImg">
-      <ion-col col-2 id="arrowLeft">
-        <ion-icon id="iconColor" name="pin"></ion-icon>
+    <ion-row class="imgBox">
+      <ion-col id="imgCol">
+        <ion-slides pager>
+          <ion-slide>
+            yo
+          </ion-slide>
+          <ion-slide>
+            <img alt="operaen" height="235px" src="{{itemData.src}}">
+            <div id="itemImg">
+              <ion-col col-2 id="arrowLeft">
+                <ion-icon id="iconColor" name="pin"></ion-icon>
+              </ion-col>
+              <ion-col col-8>
+              </ion-col>
+              <ion-col col-2 id="arrowRight">
+                <ion-icon id="iconColor" name="chatbubbles"></ion-icon>
+              </ion-col>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <p> Fantasktisk sted YOYO</p>
+          </ion-slide>
+        </ion-slides>
       </ion-col>
-      <ion-col col-8>
-        </ion-col>
-        <ion-col col-2 id="arrowRight">
-          <ion-icon id="iconColor" name="chatbubbles"></ion-icon>
-        </ion-col>
-   </div>
- </ion-slide>
- <ion-slide>
-     <p> Fantasktisk sted YOYO</p>
-  </ion-slide>
- </ion-slides>
-  </ion-col>
-  </ion-row>
+    </ion-row>
 
-  <ion-row class="items-1">
-  <ion-col>
-    <div id="item"> Rate
-      <div id="starPosition">
-      <ion-icon class="stars" name="star"></ion-icon>
-     <ion-icon class="stars" name="star"></ion-icon>
-    <ion-icon class="stars" name="star"></ion-icon>
-    <ion-icon class="stars" name="star-half"></ion-icon>
-    <ion-icon class="stars" name="star-outline"></ion-icon>
-    <div id="votes">
-    0 votes
-    </div>
-    </div>
-</div>
-  </ion-col>
-  </ion-row>
+    <ion-row class="items-1">
+      <ion-col>
+        <div id="item"> Rate
+          <div id="starPosition">
+            <ion-icon class="stars" name="star"></ion-icon>
+            <ion-icon class="stars" name="star"></ion-icon>
+            <ion-icon class="stars" name="star"></ion-icon>
+            <ion-icon class="stars" name="star-half"></ion-icon>
+            <ion-icon class="stars" name="star-outline"></ion-icon>
+            <div id="votes">
+              0 votes
+            </div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
 
-  <ion-row class="items-2">
-  <ion-col>
+    <ion-row class="items-2">
+      <ion-col>
         <div id="item">Info</div>
-  </ion-col>
-  </ion-row>
+      </ion-col>
+    </ion-row>
 
-  <ion-row class="items-3">
-  <ion-col>
-        <div id="item">Schedule</div>
-  </ion-col>
-  </ion-row>
+    <ion-row class="items-3">
+      <ion-col>
+        <div id="item" (click)="addToSchedule()">Add to schedule</div>
+      </ion-col>
+    </ion-row>
 
   </ion-grid>
 </ion-content>

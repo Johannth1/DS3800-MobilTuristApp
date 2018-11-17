@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
+import { DataProvider } from '../../providers/data/data';
 
 /**
  * Generated class for the DetailPage page.
@@ -17,14 +18,23 @@ export class DetailPage {
 
   @ViewChild(Slides) slides: Slides;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  itemData;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public data: DataProvider) {
+    this.itemData = this.data.getObject(this.navParams.get("title"));
+    console.log(this.itemData);
   }
 
   ionViewDidLoad() {
     setTimeout(() =>
     this.slides.slideTo(1,300)
     ,300);
-    console.log('ionViewDidLoad DetailPage');
   }
 
+  addToSchedule(){
+    console.log("itemData before push: " + this.itemData);
+    console.log(this.data.getObject(this.navParams.get("title")));
+    this.data.pushToSchedule(this.data.getObject(this.navParams.get("title")));
+    console.log(this.data.scheduleList);
+  }
 }
