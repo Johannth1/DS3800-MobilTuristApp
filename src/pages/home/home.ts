@@ -9,7 +9,7 @@ import { DataProvider } from '../../providers/data/data';
 })
 export class HomePage {
 
-  list: Array<Any> = [];
+  list: Array<any> = [];
 
   constructor(public navCtrl: NavController, public data: DataProvider) {
     this.data.pushTest();

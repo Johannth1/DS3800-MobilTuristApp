@@ -28,12 +28,14 @@
 
  <ion-row class="imgBox">
       <ion-col id="imgCol">
-        <ion-slides pager>
+        <ion-slides pager no-padding>
           <ion-slide>
-            <div #map id="map"></div>
+                  <div id="mappAdd" style="height:100%; width:100%;">
+                      <div #map id="map"></div>
+                </div>
           </ion-slide>
           <ion-slide>
-            <img alt="operaen" height="235px" src="{{itemData.src}}">
+            <img alt="operaen" width="100%" src="{{itemData.src}}">
             <div id="itemImg">
               <ion-col col-2 id="arrowLeft">
                 <ion-icon id="iconColor" name="pin"></ion-icon>
