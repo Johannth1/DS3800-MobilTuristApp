@@ -5,8 +5,8 @@ export class DataProvider {
 
 
   categoryTitle:String;
-  list: Array<Any> = [];
-  scheduleList: Array<Any> = [];
+  list: Array<any> = [];
+  scheduleList: Array<any> = [];
 
   opera = {
     title: "Opera",
