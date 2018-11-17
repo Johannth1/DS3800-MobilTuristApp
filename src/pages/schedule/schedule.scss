@@ -1,8 +1,67 @@
 page-schedule {
 
+  ion-scroll{
+      white-space: nowrap;
+      height: 100%;
+      background-image: linear-gradient(#562d4a, #7a4d60);
+  }
+
+  .toolbar-background{
+    opacity: 0;
+  }
+
+  #pushMeister{
+    height: 50px;
+    width: 100%;
+  }
+  #pushMeister2{
+    height: 100%;
+    width: 100%;
+  }
+
+  #optionsID{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+  }
+
+  .grid{
+  display: flex;
+  height: 100%;
+  padding: 0px;
+  }
 
 
+  #box{
+    border: 1px solid;
+    height: 100%;
+    width: 100%;
+    background-color: #805669;
+    box-shadow: 5px 5px 8px rgb(0, 0, 0);
+  }
 
+  #example1 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+  }
+
+  .item{
+   height: 175px;
+   width: 100%;
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+  }
+  .test{
+    position: absolute;
+    font-size: 20px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+
+  /*
   ion-scroll{
       white-space: nowrap;
       height: 100%;
@@ -44,5 +103,6 @@ page-schedule {
    width: 100%;
    background-color: #51344D;
   }
+  */
 
 }

@@ -5,26 +5,26 @@ export class DataProvider {
 
 
   categoryTitle:String;
-  list: Array<Any> = [];
-  scheduleList: Array<Any> = [];
+  list: Array<any> = [];
+  scheduleList: Array<any> = [];
 
   opera = {
     title: "Opera",
     desc: "Something about Opera",
     src: "assets/imgs/opera.jpg",
-    navbarColor: "sightseeingColor",
+    navbarColor: "Sightseeing",
   }
   vigelandsparken = {
     title: "Vigelandsparken",
     desc: "Something about Vigelandsparken",
     src: "assets/imgs/vigelandsparken.jpg",
-    navbarColor: "sightseeingColor",
+    navbarColor: "Sightseeing",
   }
   vikingmuseum = {
     title: "Viking Museum",
     desc: "Something about Viking Museum",
     src: "assets/imgs/vikingmuseum.jpg",
-    navbarColor: "sightseeingColor",
+    navbarColor: "Sightseeing",
   }
 
 
@@ -37,15 +37,12 @@ export class DataProvider {
     switch(name) {
        case "Opera": {
          return this.opera;
-         break;
        }
        case "Vigelandsparken": {
          return this.vigelandsparken;
-         break;
        }
        case "Viking Museum": {
          return this.vikingmuseum;
-         break;
        }
        default: {
          console.log("beep boop");

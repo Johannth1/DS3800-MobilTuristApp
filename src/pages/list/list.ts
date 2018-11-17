@@ -16,7 +16,7 @@ import { DataProvider } from '../../providers/data/data';
   templateUrl: 'list.html',
 })
 export class ListPage {
-  items: Array<String> = [];
+  itemArray: Array<String> = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public data: DataProvider) {
 
@@ -24,10 +24,11 @@ export class ListPage {
 
   goToDetail(item){
     this.navCtrl.push("DetailPage", item);
+    console.log("item: " + item);
 }
 
   ionViewDidLoad() {
-    this.items = this.data.list;
+    this.itemArray = this.data.list;
     console.log(this.data.list);
   }
 

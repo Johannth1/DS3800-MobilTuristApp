@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
-
+//import { HomePage } from '../home/home';
 /**
  * Generated class for the SchedulePage page.
  *
@@ -26,6 +26,10 @@ export class SchedulePage {
 
   ionViewDidLoad() {
 
+  }
+
+  goBack(){
+    this.navCtrl.push("HomePage");
   }
 
 

@@ -25,7 +25,7 @@
 <ion-content>
    <ion-scroll scrollY="true">
     <ion-grid>
-      <ion-row class="item" *ngFor="let ngItem of items">
+      <ion-row class="item" *ngFor="let ngItem of itemArray">
         <ion-col>
           <div class="imgBox" (click)="goToDetail(ngItem)">
             <img class="cover" src={{ngItem.src}} alt="">

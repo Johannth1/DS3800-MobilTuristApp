@@ -12,17 +12,7 @@ export class HomePage {
   list: Array<any> = [];
 
   constructor(public navCtrl: NavController, public data: DataProvider) {
-    this.data.pushTest();
-    console.log(this.data.scheduleList);
-    this.list.push(
-      {
-        title: "Opera",
-        desc: "Something about Opera",
-        src: "assets/imgs/opera.jpg",
-        navbarColor: "sightseeingColor",
-      }
-    );
-    console.log(this.list);
+
   }
 
   goToSightseeing() {

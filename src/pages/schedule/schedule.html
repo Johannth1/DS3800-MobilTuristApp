@@ -1,23 +1,43 @@
-<ion-header>
-
-  <ion-navbar color={{this.data.categoryTitle}}>
-
-    <ion-title>{{this.data.categoryTitle}}</ion-title>
-
-    <ion-buttons end>
-      <button ion-button icon-only (click)="openSettings()">
-        <ion-icon name="options"></ion-icon>
-      </button>
-    </ion-buttons>
-
-  </ion-navbar>
-
-</ion-header>
-
-
 <ion-content>
-   <ion-scroll scrollY="true">
     <ion-grid>
+      <ion-scroll scrollY="true">
+        <ion-header no-border>
+          <ion-navbar color="main">
+
+            <ion-title id="test">Schedule</ion-title>
+
+            <ion-buttons end>
+              <button ion-button icon-only (click)="openSettings()">
+                <ion-icon name="options"></ion-icon>
+              </button>
+            </ion-buttons>
+
+          </ion-navbar>
+        </ion-header>
+
+      <ion-row id="pushMeister">
+          <div id="pushMeister2">
+          </div>
+      </ion-row>
+
+      
+      <ion-row class="item">
+          <div id="box">
+          </div>
+      </ion-row>
+      <ion-row class="item">
+          <div id="box">
+          </div>
+      </ion-row>
+      <ion-row class="item">
+          <div id="box">
+          </div>
+      </ion-row>
+      <ion-row class="item">
+          <div id="box">
+          </div>
+      </ion-row>
+      <!--
       <ion-row class="item" *ngFor="let ngItem of items">
         <ion-col>
           <div class="imgBox">
@@ -29,7 +49,7 @@
           </div>
         </ion-col>
       </ion-row>
-
+      -->
+    </ion-scroll>
     </ion-grid>
-   </ion-scroll>
 </ion-content>
