@@ -2,7 +2,7 @@
     <ion-grid>
       <ion-scroll scrollY="true">
         <ion-header no-border>
-          <ion-navbar color="main">
+          <ion-navbar color="Sightseeing">
 
             <ion-title id="test">Schedule</ion-title>
 
@@ -20,9 +20,13 @@
           </div>
       </ion-row>
 
-      
-      <ion-row class="item">
-          <div id="box">
+
+      <ion-row class="item" *ngFor="let ngItem of itemArray">
+          <div id="box" (click)="goToDetail(ngItem)">
+            <h4 class="text-block" id="text-block-title">{{ngItem.title}}</h4>
+            <p class="text-block" id="text-block-time">{{ngItem.tid}}</p>
+            <!--<i class="icon arrow-dropright" id="arrow"></i>-->
+            <ion-icon name="arrow-dropright" id="arrow"></ion-icon>
           </div>
       </ion-row>
       <ion-row class="item">

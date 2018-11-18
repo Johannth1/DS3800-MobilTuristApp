@@ -13,18 +13,21 @@ export class DataProvider {
     desc: "Something about Opera",
     src: "assets/imgs/opera.jpg",
     navbarColor: "Sightseeing",
+    tid: "20",
   }
   vigelandsparken = {
     title: "Vigelandsparken",
     desc: "Something about Vigelandsparken",
     src: "assets/imgs/vigelandsparken.jpg",
     navbarColor: "Sightseeing",
+    tid: "60",
   }
   vikingmuseum = {
     title: "Viking Museum",
     desc: "Something about Viking Museum",
     src: "assets/imgs/vikingmuseum.jpg",
     navbarColor: "Sightseeing",
+    tid: "60",
   }
 
 

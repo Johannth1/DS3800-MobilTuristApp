@@ -16,12 +16,12 @@ import { DataProvider } from '../../providers/data/data';
 })
 export class SchedulePage {
 
-  items: Array<String> = [];
+  itemArray: Array<String> = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public data: DataProvider) {
-    this.items = this.data.scheduleList;
+    this.itemArray = this.data.scheduleList;
     console.log(this.data.scheduleList);
-    console.log(this.items);
+    console.log(this.itemArray);
   }
 
   ionViewDidLoad() {
