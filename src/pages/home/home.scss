@@ -72,4 +72,10 @@ page-home {
  .font{
     text-shadow: 7px 7px 15px black;
  }
+ .arrows{
+   position: absolute;
+   left:85%;
+   top:35%;
+   filter: drop-shadow(5px 5px 3px black);
+ }
 }
