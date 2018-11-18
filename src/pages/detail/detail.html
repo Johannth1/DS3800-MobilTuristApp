@@ -38,7 +38,6 @@
                 </div>
               </ion-col>
               <ion-col>
-                  <ion-icon id="heart" isActive="true" (click)="addToSchedule()" name="heart-outline"></ion-icon>
               </ion-col>
               <ion-col id="arrowRight">
                 <div class="iconbutton">
@@ -60,14 +59,12 @@
     </ion-row>
 
     <ion-row class="items-1">
-      <ion-col>
-        <div id="item-info">Info</div>
-
+      <ion-col id="border-right">
+        <div id="heart-box">
+          <ion-icon id="heart" isActive="true" (click)="addToSchedule()" name="heart-outline"></ion-icon>
+        </div>
       </ion-col>
-    </ion-row>
-
-    <ion-row class="items-2">
-      <ion-col>
+      <ion-col id="border-left">
         <div class="rate">
           <input type="radio" id="star5" name="rate" value="5" />
           <label for="star5" title="text">5 stars</label>
@@ -83,9 +80,13 @@
       </ion-col>
     </ion-row>
 
+    <ion-row class="items-2">
+       <div id="item-info">Info</div>
+    </ion-row>
+
     <ion-row class="items-3">
       <ion-col>
-        <div id="item">Add to schedule</div>
+        <div id="item">Go to Schedule</div>
       </ion-col>
     </ion-row>
 

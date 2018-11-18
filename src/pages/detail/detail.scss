@@ -36,10 +36,10 @@ page-detail {
 position: absolute;
 top:50%;
 width: 70%;
-left:50%;
+left:63%;
 transform: translate(-50%,-50%);
 color: white;
-font-size: 20px;
+font-size: 24px;
 }
 
 #slide-row{
@@ -52,12 +52,12 @@ font-size: 20px;
 }
 #item-info{
   position: absolute;
-  top:50%;
   width: 70%;
-  left:50%;
+  bottom: 25%;
+  left:80%;
   transform: translate(-50%,-50%);
   color: white;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 #itemImg{
@@ -113,10 +113,21 @@ font-size: 20px;
 #heart{
   position: absolute;
   font-size: 54px;
-  top:45%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  top:50%;
+  left:30%;
+  transform: translate(30%,-50%);
    color: rgb(215, 60, 121);
+}
+#heart-box{
+  height: 100%;
+  width: 100%;
+}
+
+#border-left{
+  border-left: 0.1px solid black;
+}
+#border-right{
+border-right: 0.1px solid black;
 }
 
 .swiper-pagination-bullet{
@@ -142,8 +153,12 @@ font-size: 20px;
 }
 .rate {
     float: left;
-    height: 46px;
+    height: 50px;
+    width: 100%;
     padding: 0 10px;
+    transform: translate(-10%,110%);
+    top:50%;
+    left:10%;
 }
 .rate:not(:checked) > input {
     position:absolute;
@@ -155,7 +170,7 @@ font-size: 20px;
     overflow:hidden;
     white-space:nowrap;
     cursor:pointer;
-    font-size:30px;
+    font-size:25px;
     color:#ccc;
 }
 .rate:not(:checked) > label:before {
