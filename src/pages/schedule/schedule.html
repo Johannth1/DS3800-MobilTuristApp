@@ -25,25 +25,10 @@
           <div id="box">
             <textarea class="text-block" id="text-block-title" rows="2" cols="15">{{ngItem.title}}</textarea>
             <p class="text-block" id="text-block-time">Tid: {{ngItem.tid}} min</p>
-            <!--<i class="icon arrow-dropright" id="arrow"></i>-->
             <ion-icon name="arrow-dropright" id="arrow" (click)="goToDetail(ngItem)"></ion-icon>
             <img src="assets/imgs/close.png" id="close" (click)="removeItem(ngItem)" alt="alt">
           </div>
       </ion-row>
-
-      <!--
-      <ion-row class="item" *ngFor="let ngItem of items">
-        <ion-col>
-          <div class="imgBox">
-            <img class="cover" src={{ngItem.src}} alt="">
-            <div class="text-block">
-              <h4>{{ngItem.title || "SampleText"}}</h4>
-              <p>{{ngItem.desc || SampleText}}</p>
-            </div>
-          </div>
-        </ion-col>
-      </ion-row>
-      -->
     </ion-scroll>
 
     </ion-grid>
