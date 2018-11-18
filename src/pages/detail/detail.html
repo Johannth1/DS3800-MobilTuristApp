@@ -1,3 +1,18 @@
+<ion-header>
+
+  <ion-navbar color={{data.categoryTitle}}>
+
+    <ion-title>{{data.categoryTitle}}</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openSettings()">
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
 <ion-content no-padding>
   <ion-grid no-padding>
 
@@ -23,7 +38,6 @@
               </ion-col>
               <ion-col>
                   <ion-icon id="heart" isActive="true" (click)="addToSchedule()" name="heart-outline"></ion-icon>
-                  <ion-icon id="heart" isActive="true" name="heart"></ion-icon>
               </ion-col>
               <ion-col id="arrowRight">
                 <div class="iconbutton">
@@ -76,18 +90,3 @@
 
   </ion-grid>
 </ion-content>
-<ion-footer>
-
-  <ion-navbar color={{data.categoryTitle}}>
-
-    <ion-title>{{data.categoryTitle}}</ion-title>
-
-    <ion-buttons end>
-      <button ion-button icon-only (click)="openSettings()">
-        <ion-icon name="options"></ion-icon>
-      </button>
-    </ion-buttons>
-
-  </ion-navbar>
-
-</ion-footer>
