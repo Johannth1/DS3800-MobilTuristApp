@@ -10,86 +10,86 @@ export class DataProvider {
 
   opera = {
     title: "Opera",
-    desc: "Something about Opera",
+    desc: "mon-fri: 10.00-16.00 (11.00-17.00)",
     src: "assets/imgs/opera.jpg",
     navbarColor: "Sightseeing",
-    tid: "20",
+    tid: "1t 30m +",
   }
   vigelandsparken = {
     title: "Vigelandsparken",
-    desc: "Something about Vigelandsparken",
+    desc: "Always open",
     src: "assets/imgs/vigelandsparken.jpg",
     navbarColor: "Sightseeing",
-    tid: "60",
+    tid: "1t 30m +",
   }
   vikingmuseum = {
     title: "Viking Museum",
-    desc: "Something about Viking Museum",
+    desc: "mon-sun: 10.00-16.00",
     src: "assets/imgs/vikingmuseum.jpg",
     navbarColor: "Sightseeing",
-    tid: "60",
+    tid: "1t 30m +",
   }
   louisvuitton = {
     title: "Louis Vuitton",
-    desc: "high end",
+    desc: "mon-fri: 10.00-18.00",
     src: "assets/imgs/louis.jpg" ,
     navbarColor: "Shopping",
   }
   urmakerbjerke = {
     title: "Urmaker Bjerke",
-    desc: "klokker og ur",
+    desc: "mon-fri: 09.00-17.00 (10.00-15.00)",
     src: "assets/imgs/bjerke.jpg",
     navbarColor: "Shopping",
   }
   hermés = {
     title: "Hermés",
-    desc: "high end",
+    desc: "mon-fri: 10.00-18.00",
     src:"assets/imgs/hermes.jpg" ,
     navbarColor: "Shopping",
   }
   gucci = {
     title: "Gucci",
-    desc: "high end",
+    desc: "mon-fri: 10.00-19.00 (10.00-18.00)",
     src: "assets/imgs/gucci.jpg",
     navbarColor: "Shopping",
   }
   stenogstrøm = {
-    title: "StenogStrøm",
-    desc: "high end",
+    title: "Steen&Strøm",
+    desc: "mon-fri: 10.00-19.00 (10.00-18.00)",
     src:"assets/imgs/sten.jpg" ,
     navbarColor: "Shopping",
   }
   maemo = {
-    title: "Maemo",
-    desc: "good food",
+    title: "Maaemo",
+    desc: "wed-thurs: 18.00-00.00 (12.00-00.00)",
     src: "assets/imgs/maemo.jpg" ,
     navbarColor: "Food",
 
   }
   kontrast = {
     title: "Kontrast",
-    desc: "good food",
+    desc: "tues-sun: 18.00-01.00",
     src: "assets/imgs/kontrast.jpg" ,
     navbarColor: "Food",
 
   }
   galt = {
     title: "Galt restaurant",
-    desc: "good food",
+    desc: "tues-thurs: 18:00-01-00 (17.45-01.00)",
     src:"assets/imgs/galt.jpg" ,
     navbarColor: "Food",
 
   }
   beijinghouse = {
     title: "Beijing House",
-    desc: "good food",
+    desc: "mon-fri: 11.00-22.00 (14.00-22.30)",
     src: "assets/imgs/beijing.jpg",
     navbarColor: "Food",
 
   }
   theater = {
     title: "Theater Café",
-    desc: "good food",
+    desc: "mon-sat: 11.00-23.00 (15.00-22.00)",
     src: "assets/imgs/theater.jpg",
     navbarColor: "Food",
 
@@ -124,10 +124,10 @@ export class DataProvider {
        case "Gucci": {
          return this.gucci;
        }
-       case "StenogStrøm": {
+       case "Steen&Strøm": {
          return this.stenogstrøm;
        }
-       case "Maemo": {
+       case "Maaemo": {
          return this.maemo;
        }
        case "Kontrast": {

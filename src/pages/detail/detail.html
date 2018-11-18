@@ -1,4 +1,19 @@
 
+<ion-header>
+
+  <ion-navbar color={{data.categoryTitle}}>
+
+    <ion-title>{{data.categoryTitle}}</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openSettings()">
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
 <ion-content no-padding>
   <ion-grid no-padding>
 
@@ -36,7 +51,7 @@
           <ion-slide>
             <ion-scroll scrollY="true">
               <ion-icon name="button"></ion-icon>
-              
+
               </ion-scroll>
           </ion-slide>
          </ion-slides>
