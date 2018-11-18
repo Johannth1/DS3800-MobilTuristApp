@@ -8,6 +8,7 @@ import { DataProvider } from '../../providers/data/data';
   templateUrl: 'list.html',
 })
 export class ListPage {
+
   itemArray: Array<String> = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public data: DataProvider) {
@@ -22,6 +23,13 @@ export class ListPage {
   ionViewDidLoad() {
     this.itemArray = this.data.list;
     console.log(this.data.list);
+  }
+
+  contentPadding() {
+  let styles = {
+    'background-color' : this.data.categoryColor,
+  };
+  return styles;
   }
 
 }

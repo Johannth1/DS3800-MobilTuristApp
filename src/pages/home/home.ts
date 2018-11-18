@@ -18,17 +18,20 @@ export class HomePage {
   goToSightseeing() {
     this.data.setList("Sightseeing");
     this.data.categoryTitle = "Sightseeing";
+    this.data.categoryColor = "#51344D";
     this.navCtrl.push("ListPage");
   }
   goToShopping() {
     this.data.setList("Shopping");
     this.data.categoryTitle = "Shopping";
+    this.data.categoryColor = "#6F5060";
     this.navCtrl.push("ListPage");
   }
 
   goToFood() {
     this.data.setList("Food");
     this.data.categoryTitle = "Food";
+    this.data.categoryColor = "#866979";
     this.navCtrl.push("ListPage");
   }
   goToSchedule() {
