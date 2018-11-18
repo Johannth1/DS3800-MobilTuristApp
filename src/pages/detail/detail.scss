@@ -7,7 +7,7 @@ page-detail {
     }
 
 .items-1{
-  height: 30%;
+  height: 29%;
   width: 100%;
   background-color: #6F5060;
 }
@@ -36,6 +36,14 @@ color: white;
 font-size: 20px;
 }
 
+#slide-row{
+  height: 100%;
+  width: 100%;
+}
+#item-row{
+  height: 30%;
+  width:100%;
+}
 #item-info{
   position: absolute;
   top:50%;
@@ -77,11 +85,16 @@ font-size: 20px;
   width: 100%;
 }
 
+.iconbutton{
+  background-color: black;
+  width: 32px;
+  border-radius: 50px;
+}
 #arrowLeft{
-  right: 150%;
+  right: 125%;
 }
 #arrowRight{
-   left: 150%;
+   left: 125%;
 }
 #heart{
   position: absolute;

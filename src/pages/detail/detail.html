@@ -12,6 +12,7 @@
 
  <ion-row class="imgBox">
       <ion-col id="imgCol">
+        <ion-row id="slide-row">
         <ion-slides pager no-padding>
           <ion-slide>
                   <div id="mappAdd" style="height:100%; width:100%;">
@@ -21,15 +22,22 @@
           <ion-slide>
             <img alt="operaen" width="100%" src="{{itemData.src}}">
             <div id="itemImg">
-              <ion-col col-2 id="arrowLeft">
+              <ion-row id="item-row">
+              <ion-col id="arrowLeft">
+                <div class="iconbutton">
                 <ion-icon id="iconColor" name="pin"></ion-icon>
+                </div>
               </ion-col>
-              <ion-col col-8>
+              <ion-col>
                   <ion-icon id="heart" isActive="true" (click)="addToSchedule()" name="heart-outline"></ion-icon>
+                  <ion-icon id="heart" isActive="true" name="heart"></ion-icon>
               </ion-col>
-              <ion-col col-2 id="arrowRight">
+              <ion-col id="arrowRight">
+                <div class="iconbutton">
                 <ion-icon id="iconColor" name="chatbubbles"></ion-icon>
+                </div>
               </ion-col>
+              </ion-row>
             </div>
           </ion-slide>
           <ion-slide>
@@ -38,12 +46,14 @@
               </ion-scroll>
           </ion-slide>
          </ion-slides>
+         </ion-row>
       </ion-col>
     </ion-row>
 
     <ion-row class="items-1">
       <ion-col>
         <div id="item-info">Info</div>
+
       </ion-col>
     </ion-row>
 
