@@ -157,22 +157,14 @@ setList(name:String){
        break;
       }
       case "Shopping": {
-<<<<<<< HEAD
-        this.list = [this.louisvuitton, this.urmakerbjerke, this.hermés, this.gucci, this.stenogstrøm]
-=======
         this.categoryColor = "#51344D";
-        this.list = []
->>>>>>> e7d4f52cf01cf1271e4a5bb5fcb3503008d4f4a8
+        this.list = [this.louisvuitton, this.urmakerbjerke, this.hermés, this.gucci, this.stenogstrøm]
 
        break;
       }
       case "Food": {
-<<<<<<< HEAD
-        this.list = [this.maemo, this.kontrast, this.galt, this.beijinghouse, this.theater]
-=======
         this.categoryColor = "#6F5060";
-        this.list = []
->>>>>>> e7d4f52cf01cf1271e4a5bb5fcb3503008d4f4a8
+        this.list = [this.maemo, this.kontrast, this.galt, this.beijinghouse, this.theater]
        break;
       }
       default: {
