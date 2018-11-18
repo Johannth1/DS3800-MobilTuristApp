@@ -36,7 +36,7 @@ export class DetailPage {
   }
 
   showMap(){
-    const location = new google.maps.LatLng(59.9074885,10.7509388)
+    const location = this.itemData.location;
 
     const options = {
       center: location,

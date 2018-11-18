@@ -14,6 +14,9 @@ export class DataProvider {
     src: "assets/imgs/opera.jpg",
     navbarColor: "Sightseeing",
     tid: "1h 30min +",
+    location: new google.maps.LatLng(59.9074885,10.7509388),
+
+
   }
   vigelandsparken = {
     title: "Vigelandsparken",
