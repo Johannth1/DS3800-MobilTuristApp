@@ -24,6 +24,7 @@ export class DataProvider {
     src: "assets/imgs/vigelandsparken.jpg",
     navbarColor: "Sightseeing",
     tid: "1h 30min +",
+    location: new google.maps.LatLng(59.9270317,10.6986763),
   }
   vikingmuseum = {
     title: "Viking Museum",
@@ -31,42 +32,49 @@ export class DataProvider {
     src: "assets/imgs/vikingmuseum.jpg",
     navbarColor: "Sightseeing",
     tid: "1h 30min +",
+    location: new google.maps.LatLng(59.9049475,10.6822188),
   }
   louisvuitton = {
     title: "Louis Vuitton",
     desc: "mon-fri: 10.00-18.00",
     src: "assets/imgs/louis.jpg" ,
     navbarColor: "Shopping",
+    location: new google.maps.LatLng(59.9121897,10.7401943),
   }
   urmakerbjerke = {
     title: "Urmaker Bjerke",
     desc: "mon-fri: 09.00-17.00 (10.00-15.00)",
     src: "assets/imgs/bjerke.jpg",
     navbarColor: "Shopping",
+    location: new google.maps.LatLng(59.9120693,10.7401465),
   }
   hermés = {
     title: "Hermés",
     desc: "mon-fri: 10.00-18.00",
     src:"assets/imgs/hermes.jpg" ,
     navbarColor: "Shopping",
+    location: new google.maps.LatLng(59.911848,10.7397372),
   }
   gucci = {
     title: "Gucci",
     desc: "mon-fri: 10.00-19.00 (10.00-18.00)",
     src: "assets/imgs/gucci.jpg",
     navbarColor: "Shopping",
+    location: new google.maps.LatLng(59.9119912,10.7413791),
   }
   stenogstrøm = {
     title: "Steen&Strøm",
     desc: "mon-fri: 10.00-19.00 (10.00-18.00)",
     src:"assets/imgs/sten.jpg" ,
     navbarColor: "Shopping",
+    location: new google.maps.LatLng(59.9118852,10.7408589),
   }
   maemo = {
     title: "Maaemo",
     desc: "wed-thurs: 18.00-00.00 (12.00-00.00)",
     src: "assets/imgs/maemo.jpg" ,
     navbarColor: "Food",
+    location: new google.maps.LatLng(59.9106324,10.758386),
 
   }
   kontrast = {
@@ -74,6 +82,7 @@ export class DataProvider {
     desc: "tues-sun: 18.00-01.00",
     src: "assets/imgs/kontrast.jpg" ,
     navbarColor: "Food",
+    location: new google.maps.LatLng(59.9229445,10.7489405),
 
   }
   galt = {
@@ -81,6 +90,7 @@ export class DataProvider {
     desc: "tues-thurs: 18:00-01-00 (17.45-01.00)",
     src:"assets/imgs/galt.jpg" ,
     navbarColor: "Food",
+    location: new google.maps.LatLng(59.916549,10.7113581),
 
   }
   beijinghouse = {
@@ -88,6 +98,7 @@ export class DataProvider {
     desc: "mon-fri: 11.00-22.00 (14.00-22.30)",
     src: "assets/imgs/beijing.jpg",
     navbarColor: "Food",
+    location: new google.maps.LatLng(59.9170727,10.7395263),
 
   }
   theater = {
@@ -95,6 +106,7 @@ export class DataProvider {
     desc: "mon-sat: 11.00-23.00 (15.00-22.00)",
     src: "assets/imgs/theater.jpg",
     navbarColor: "Food",
+    location: new google.maps.LatLng(59.9140427,10.7317023),
 
   }
 
