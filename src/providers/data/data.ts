@@ -152,18 +152,18 @@ export class DataProvider {
 setList(name:String){
   switch(name) {
       case "Sightseeing": {
-       this.categoryColor = "#51344D";
+       this.categoryColor = "Sightseeing";
        this.list = [this.opera, this.vigelandsparken, this.vikingmuseum]
        break;
       }
       case "Shopping": {
-        this.categoryColor = "#51344D";
+        this.categoryColor = "Shopping";
         this.list = [this.louisvuitton, this.urmakerbjerke, this.hermés, this.gucci, this.stenogstrøm]
 
        break;
       }
       case "Food": {
-        this.categoryColor = "#6F5060";
+        this.categoryColor = "Food";
         this.list = [this.maemo, this.kontrast, this.galt, this.beijinghouse, this.theater]
        break;
       }

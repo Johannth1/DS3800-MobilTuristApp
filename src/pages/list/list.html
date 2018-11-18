@@ -18,7 +18,7 @@
 <ion-content>
    <ion-scroll scrollY="true">
     <ion-grid>
-      <ion-row class="item" style={{data.categoryTitle}} *ngFor="let ngItem of itemArray">
+      <ion-row class="item" [ngStyle]="contentPadding()" *ngFor="let ngItem of itemArray">
         <ion-col>
           <div class="imgBox" (click)="goToDetail(ngItem)">
             <img class="cover" src={{ngItem.src}} alt="">
