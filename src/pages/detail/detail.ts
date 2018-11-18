@@ -42,7 +42,7 @@ export class DetailPage {
 
     const options = {
       center: location,
-      zoom: 10
+      zoom: 16
     }
 
     this.map = new google.maps.Map(this.mapRef.nativeElement, options);

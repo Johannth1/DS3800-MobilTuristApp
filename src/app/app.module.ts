@@ -8,12 +8,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { DataProvider } from '../providers/data/data';
+import {ExpandableComponent} from '../components/expandable/expandable';
 //import { ShareComponent } from '../components/share/share';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    ExpandableComponent,
 //    ListPage
   ],
   imports: [

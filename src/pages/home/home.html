@@ -1,4 +1,4 @@
-<ion-header>
+<ion-footer>
   <ion-navbar color="main">
 
     <ion-title id="logo"> <img width="40px" height="40px" alt="logo, kineser med kart" src="assets/imgs/BetterLogo.png"></ion-title>
@@ -10,7 +10,7 @@
     </ion-buttons>
 
   </ion-navbar>
-</ion-header>
+</ion-footer>
 
 <ion-content>
   <ion-grid>
@@ -18,28 +18,36 @@
       <ion-col id="Sightseeing" (click)="goToSightseeing()">
         <div class="button">
           <img class="icons" width="40px" height="40px" alt="logo, kineser med kart" src="assets/imgs/Sightseeing.png">
-          <p class="font">Sightseeing</p></div>
+          <p class="font">Sightseeing</p>
+            <ion-icon class="arrows" name="arrow-dropright"></ion-icon>
+        </div>
       </ion-col>
     </ion-row>
     <ion-row id="item-2">
       <ion-col id="Shopping" (click)="goToShopping()">
             <div class="button">
               <img class="icons"  width="40px" height="40px" alt="logo, kineser med kart" src="assets/imgs/Shopping.png">
-              <p class="font">Shopping</p></div>
+              <p class="font">Shopping</p>
+              <ion-icon class="arrows" name="arrow-dropright"></ion-icon>
+            </div>
       </ion-col>
     </ion-row>
     <ion-row id="item-3">
         <ion-col id="Food" (click)="goToFood()">
               <div class="button">
                 <img class="icons" width="40px" height="40px" alt="logo, kineser med kart" src="assets/imgs/Food.png">
-                <p class="font">Food</p></div>
+                <p class="font">Food</p>
+                <ion-icon class="arrows" name="arrow-dropright"></ion-icon>
+              </div>
         </ion-col>
       </ion-row>
       <ion-row id="item-4">
           <ion-col id="schedule" (click)="goToSchedule()">
                 <div class="button">
                   <img class="icons" width="40px" height="40px" alt="logo, kineser med kart" src="assets/imgs/Schedule.png">
-                  <p class="font">Schedule</p></div>
+                  <p class="font">Schedule</p>
+                  <ion-icon class="arrows" name="arrow-dropright"></ion-icon>
+                </div>
           </ion-col>
         </ion-row>
   </ion-grid>
