@@ -28,10 +28,20 @@ export class SchedulePage {
 
   }
 
-  goBack(){
-    this.navCtrl.push("HomePage");
+  goToDetail(item){
+    this.navCtrl.push("DetailPage", item);
+    console.log("item: " + item);
   }
 
+  removeItem(currentItem){
+    let items: Array<String> = [];
+    items = this.data.scheduleList;
+    for(var i=0;i<=items.length;i++){
+      if(items[i] === currentItem){
+        this.data.scheduleList.splice(i, 1);
+      }
+    }
+  }
 
 
 }
