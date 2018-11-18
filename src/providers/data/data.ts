@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class DataProvider {
 
-
+  categoryColor:String;
   categoryTitle:String;
   list: Array<any> = [];
   scheduleList: Array<any> = [];
@@ -13,18 +13,21 @@ export class DataProvider {
     desc: "Something about Opera",
     src: "assets/imgs/opera.jpg",
     navbarColor: "Sightseeing",
+    tid: "20",
   }
   vigelandsparken = {
     title: "Vigelandsparken",
     desc: "Something about Vigelandsparken",
     src: "assets/imgs/vigelandsparken.jpg",
     navbarColor: "Sightseeing",
+    tid: "60",
   }
   vikingmuseum = {
     title: "Viking Museum",
     desc: "Something about Viking Museum",
     src: "assets/imgs/vikingmuseum.jpg",
     navbarColor: "Sightseeing",
+    tid: "60",
   }
   louisvuitton = {
     title: "Louis Vuitton",
@@ -149,16 +152,27 @@ export class DataProvider {
 setList(name:String){
   switch(name) {
       case "Sightseeing": {
+       this.categoryColor = "#51344D";
        this.list = [this.opera, this.vigelandsparken, this.vikingmuseum]
        break;
       }
       case "Shopping": {
+<<<<<<< HEAD
         this.list = [this.louisvuitton, this.urmakerbjerke, this.hermés, this.gucci, this.stenogstrøm]
+=======
+        this.categoryColor = "#51344D";
+        this.list = []
+>>>>>>> e7d4f52cf01cf1271e4a5bb5fcb3503008d4f4a8
 
        break;
       }
       case "Food": {
+<<<<<<< HEAD
         this.list = [this.maemo, this.kontrast, this.galt, this.beijinghouse, this.theater]
+=======
+        this.categoryColor = "#6F5060";
+        this.list = []
+>>>>>>> e7d4f52cf01cf1271e4a5bb5fcb3503008d4f4a8
        break;
       }
       default: {

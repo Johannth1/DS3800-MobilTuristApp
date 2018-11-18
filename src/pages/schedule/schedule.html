@@ -1,6 +1,22 @@
 <ion-content>
     <ion-grid>
       <ion-scroll scrollY="true">
+<<<<<<< HEAD
+=======
+        <ion-header no-border>
+          <ion-navbar color="Sightseeing">
+
+            <ion-title id="test">Schedule</ion-title>
+
+            <ion-buttons end>
+              <button ion-button icon-only (click)="openSettings()">
+                <ion-icon name="options"></ion-icon>
+              </button>
+            </ion-buttons>
+
+          </ion-navbar>
+        </ion-header>
+>>>>>>> e7d4f52cf01cf1271e4a5bb5fcb3503008d4f4a8
 
       <ion-row id="pushMeister">
           <div id="pushMeister2">
@@ -8,6 +24,7 @@
       </ion-row>
 
 
+<<<<<<< HEAD
       <ion-row class="item">
           <div id="box">
           </div>
@@ -22,6 +39,14 @@
       </ion-row>
       <ion-row class="item">
           <div id="box">
+=======
+      <ion-row class="item" *ngFor="let ngItem of itemArray">
+          <div id="box" (click)="goToDetail(ngItem)">
+            <textarea class="text-block" id="text-block-title" rows="2" cols="15">{{ngItem.title}}</textarea>
+            <p class="text-block" id="text-block-time">Tid: {{ngItem.tid}} min</p>
+            <!--<i class="icon arrow-dropright" id="arrow"></i>-->
+            <ion-icon name="arrow-dropright" id="arrow"></ion-icon>
+>>>>>>> e7d4f52cf01cf1271e4a5bb5fcb3503008d4f4a8
           </div>
       </ion-row>
 

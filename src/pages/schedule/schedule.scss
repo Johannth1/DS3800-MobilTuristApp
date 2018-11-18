@@ -30,6 +30,34 @@ page-schedule {
   padding: 0px;
   }
 
+  .text-block {
+    position: relative;
+    color: white;
+    padding-left: 15px;
+    bottom: 10%;
+}
+
+  #text-block-title{
+    top:10px;
+    font-size: 25px;
+    color: white;
+    background: transparent;
+    border:0;
+    resize: none;
+  }
+  #text-block-time{
+    font-size: 15px;
+    top: 2px;
+  }
+
+  #arrow{
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    left:78%;
+    top:60%;
+    filter: drop-shadow(5px 5px 3px black);
+  }
 
   #box{
     border: 1px solid;
@@ -46,7 +74,7 @@ page-schedule {
   }
 
   .item{
-   height: 175px;
+   height: 135px;
    width: 100%;
    padding-left: 50px;
    padding-right: 50px;
