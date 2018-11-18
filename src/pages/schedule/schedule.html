@@ -2,7 +2,7 @@
     <ion-grid>
       <ion-scroll scrollY="true">
         <ion-header no-border>
-          <ion-navbar color="Sightseeing">
+          <ion-navbar color="Schedule">
 
             <ion-title id="test">Schedule</ion-title>
 
@@ -22,11 +22,12 @@
 
 
       <ion-row class="item" *ngFor="let ngItem of itemArray">
-          <div id="box" (click)="goToDetail(ngItem)">
+          <div id="box">
             <textarea class="text-block" id="text-block-title" rows="2" cols="15">{{ngItem.title}}</textarea>
             <p class="text-block" id="text-block-time">Tid: {{ngItem.tid}} min</p>
             <!--<i class="icon arrow-dropright" id="arrow"></i>-->
-            <ion-icon name="arrow-dropright" id="arrow"></ion-icon>
+            <ion-icon name="arrow-dropright" id="arrow" (click)="goToDetail(ngItem)"></ion-icon>
+            <img src="assets/imgs/close.png" id="close" (click)="removeItem(ngItem)" alt="alt">
           </div>
       </ion-row>
       <!--

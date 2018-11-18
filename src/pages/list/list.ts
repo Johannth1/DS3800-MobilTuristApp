@@ -25,7 +25,7 @@ export class ListPage {
   goToDetail(item){
     this.navCtrl.push("DetailPage", item);
     console.log("item: " + item);
-}
+  }
 
   ionViewDidLoad() {
     this.itemArray = this.data.list;
