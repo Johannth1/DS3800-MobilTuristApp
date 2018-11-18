@@ -1,18 +1,4 @@
-<ion-header>
 
-  <ion-navbar color={{data.categoryTitle}}>
-
-    <ion-title>{{data.categoryTitle}}</ion-title>
-
-    <ion-buttons end>
-      <button ion-button icon-only (click)="openSettings()">
-        <ion-icon name="options"></ion-icon>
-      </button>
-    </ion-buttons>
-
-  </ion-navbar>
-
-</ion-header>
 <ion-content no-padding>
   <ion-grid no-padding>
 
@@ -33,7 +19,7 @@
               <ion-row id="item-row">
               <ion-col id="arrowLeft">
                 <div class="iconbutton">
-                <ion-icon id="iconColor" name="pin"></ion-icon>
+                <ion-icon class="iconColor" name="pin"></ion-icon>
                 </div>
               </ion-col>
               <ion-col>
@@ -41,7 +27,7 @@
               </ion-col>
               <ion-col id="arrowRight">
                 <div class="iconbutton">
-                <ion-icon id="iconColor" name="chatbubbles"></ion-icon>
+                <ion-icon class="iconColor" name="chatbubbles"></ion-icon>
                 </div>
               </ion-col>
               </ion-row>
