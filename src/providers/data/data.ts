@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class DataProvider {
 
-
+  categoryColor:String;
   categoryTitle:String;
   list: Array<any> = [];
   scheduleList: Array<any> = [];
@@ -57,15 +57,18 @@ export class DataProvider {
 setList(name:String){
   switch(name) {
       case "Sightseeing": {
+       this.categoryColor = "#51344D";
        this.list = [this.opera, this.vigelandsparken, this.vikingmuseum]
        break;
       }
       case "Shopping": {
+        this.categoryColor = "#51344D";
         this.list = []
 
        break;
       }
       case "Food": {
+        this.categoryColor = "#6F5060";
         this.list = []
        break;
       }
