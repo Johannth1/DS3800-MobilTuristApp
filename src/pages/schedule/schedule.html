@@ -25,7 +25,7 @@
             <textarea class="text-block" id="text-block-title" rows="2" cols="15">{{ngItem.title}}</textarea>
             <p class="text-block" id="text-block-time">Time: {{ngItem.tid}}</p>
             <ion-icon name="arrow-dropright" id="arrow" (click)="goToDetail(ngItem)"></ion-icon>
-            <img src="assets/imgs/close.png" id="close" (click)="removeItem(ngItem)" alt="alt">
+            <img src="assets/imgs/close.png" id="close" (click)="this.data.removeFromSchedule(ngItem)" alt="alt">
           </div>
       </ion-row>
     </ion-scroll>

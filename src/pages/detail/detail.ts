@@ -22,9 +22,11 @@ export class DetailPage {
   map:any;
 
   itemData;
+  heartBool:boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public data: DataProvider) {
     this.itemData = this.data.getObject(this.navParams.get("title"));
+    this.heartBool = this.itemData.scheduled;
   }
 
   ionViewDidLoad() {
@@ -47,9 +49,14 @@ export class DetailPage {
   }
 
   addToSchedule(){
-    console.log("itemData before push: " + this.itemData);
-    console.log(this.data.getObject(this.navParams.get("title")));
-    this.data.pushToSchedule(this.data.getObject(this.navParams.get("title")));
-    console.log(this.data.scheduleList);
+    if (this.data.getObject(this.navParams.get("title")).scheduled){
+      this.heartBool=false;
+      this.data.getObject(this.navParams.get("title")).scheduled=false;
+      this.data.removeFromSchedule(this.data.getObject(this.navParams.get("title")));
+    } else {
+      this.heartBool=true;
+      this.data.getObject(this.navParams.get("title")).scheduled=true;
+      this.data.pushToSchedule(this.data.getObject(this.navParams.get("title")));
+    }
   }
 }

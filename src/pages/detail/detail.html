@@ -58,7 +58,9 @@
     <ion-row class="items-1">
       <ion-col id="border-right">
         <div id="heart-box">
-          <ion-icon id="heart" isActive="true" (click)="addToSchedule()" name="heart-outline"></ion-icon>
+          <ion-icon id="heart" (click)="addToSchedule()"
+          [name]="itemData.scheduled ? 'heart' : 'heart-outline'">
+          </ion-icon>
         </div>
       </ion-col>
       <ion-col id="border-left">
