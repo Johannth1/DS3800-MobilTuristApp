@@ -13,21 +13,21 @@ export class DataProvider {
     desc: "mon-fri: 10.00-16.00 (11.00-17.00)",
     src: "assets/imgs/opera.jpg",
     navbarColor: "Sightseeing",
-    tid: "1t 30min +",
+    tid: "1h 30min +",
   }
   vigelandsparken = {
     title: "Vigelandsparken",
     desc: "Always open",
     src: "assets/imgs/vigelandsparken.jpg",
     navbarColor: "Sightseeing",
-    tid: "1t 30min +",
+    tid: "1h 30min +",
   }
   vikingmuseum = {
     title: "Viking Museum",
     desc: "mon-sun: 10.00-16.00",
     src: "assets/imgs/vikingmuseum.jpg",
     navbarColor: "Sightseeing",
-    tid: "1t 30min +",
+    tid: "1h 30min +",
   }
   louisvuitton = {
     title: "Louis Vuitton",

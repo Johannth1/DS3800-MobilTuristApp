@@ -69,14 +69,21 @@ font-size: 24px;
   font-size: 24px;
 }
 
-.iconColor{
+.iconColorLeft{
   position: absolute;
   top:50%;
   left:50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-15%,-50%);
   color: #AA5371;
   opacity: 1;
-
+}
+.iconColorRight{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-80%,-50%);
+  color: #AA5371;
+  opacity: 1;
 }
 
 .imgBox{
@@ -102,13 +109,13 @@ font-size: 24px;
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  background-color: rgba(255, 255, 255,0.3);
+  background-color: rgba(255, 255, 255,0.4);
 }
 #arrowLeft{
-  right: 90%;
+  right: 105%;
 }
 #arrowRight{
-   left: 90%;
+   left: 105%;
 }
 #heart{
   position: absolute;
