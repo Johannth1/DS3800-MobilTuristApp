@@ -5,8 +5,8 @@
       <ion-title id="test">Schedule</ion-title>
 
       <ion-buttons end>
-        <button ion-button icon-only (click)="openSettings()">
-          <ion-icon name="options"></ion-icon>
+        <button ion-button icon-only (click)="goToHome()">
+          <ion-icon name="home"></ion-icon>
         </button>
       </ion-buttons>
 
@@ -22,7 +22,7 @@
 
       <ion-row class="item" *ngFor="let ngItem of itemArray">
           <div id="box">
-            <textarea class="text-block" id="text-block-title" rows="2" cols="15">{{ngItem.title}}</textarea>
+            <textarea disabled class="text-block" id="text-block-title" rows="2" cols="15">{{ngItem.title}}</textarea>
             <p class="text-block" id="text-block-time">Time: {{ngItem.tid}}</p>
             <ion-icon name="arrow-dropright" id="arrow" (click)="goToDetail(ngItem)"></ion-icon>
             <img src="assets/imgs/close.png" id="close" (click)="this.data.removeFromSchedule(ngItem)" alt="alt">

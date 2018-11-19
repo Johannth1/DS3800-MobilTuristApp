@@ -3,11 +3,11 @@
 
   <ion-navbar color={{data.categoryTitle}}>
 
-    <ion-title>{{data.categoryTitle}}</ion-title>
+    <ion-title>{{itemData.title}}</ion-title>
 
     <ion-buttons end>
-      <button ion-button icon-only (click)="openSettings()">
-        <ion-icon name="options"></ion-icon>
+      <button ion-button icon-only (click)="goToHome()">
+        <ion-icon name="home"></ion-icon>
       </button>
     </ion-buttons>
 
@@ -80,12 +80,12 @@
     </ion-row>
 
     <ion-row class="items-2">
-       <div id="item-info">Info</div>
+       <div id="item-info" (click)="goToInfo()">Info</div>
     </ion-row>
 
     <ion-row class="items-3">
       <ion-col>
-        <div id="item">Go to Schedule</div>
+        <div id="item" (click)="goToSchedule()">Go to Schedule</div>
       </ion-col>
     </ion-row>
 

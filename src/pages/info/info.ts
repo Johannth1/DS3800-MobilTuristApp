@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
-//import { HomePage } from '../home/home';
+
 /**
- * Generated class for the SchedulePage page.
+ * Generated class for the InfoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,29 +11,24 @@ import { DataProvider } from '../../providers/data/data';
 
 @IonicPage()
 @Component({
-  selector: 'page-schedule',
-  templateUrl: 'schedule.html',
+  selector: 'page-info',
+  templateUrl: 'info.html',
 })
-export class SchedulePage {
+export class InfoPage {
 
-  itemArray: Array<String> = [];
+  itemData;
+  test:String = "\"background-color:{{data.categoryTitle}};\""
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public data: DataProvider) {
-    this.itemArray = this.data.scheduleList;
-    console.log(this.data.scheduleList);
-    console.log(this.itemArray);
+    this.itemData = this.data.getObject(this.navParams.get("title"));
   }
 
   ionViewDidLoad() {
-
-  }
-
-  goToDetail(item){
-    this.navCtrl.push("DetailPage", item);
-    console.log("item: " + item);
+    console.log('ionViewDidLoad InfoPage');
   }
 
   goToHome(){
     this.navCtrl.popToRoot()
   }
+
 }

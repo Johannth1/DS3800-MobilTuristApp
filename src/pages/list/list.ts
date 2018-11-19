@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
-
 @IonicPage()
 @Component({
   selector: 'page-list',
@@ -30,6 +29,10 @@ export class ListPage {
     'background-color' : this.data.categoryColor,
   };
   return styles;
+  }
+
+  goToHome(){
+    this.navCtrl.popToRoot()
   }
 
 }

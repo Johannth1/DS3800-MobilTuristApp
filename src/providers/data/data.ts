@@ -16,6 +16,10 @@ export class DataProvider {
     navbarColor: "Sightseeing",
     tid: "1h 30min +",
     location: new google.maps.LatLng(59.9074885,10.7509388),
+    scheduled: false,
+    fullDesc: "The Oslo Opera House is the home of The Norwegian National Opera and Ballet, and the national opera theatre in Norway. The building is situated in the Bjørvika neighbourhood of central Oslo, at the head of the Oslofjord.",
+    address: "Kirsten Flagstads Plass 1, 0150 Oslo",
+    link: "https://operaen.no/en/",
   }
   vigelandsparken = {
     objName: "vigelandsparken",
@@ -25,6 +29,10 @@ export class DataProvider {
     navbarColor: "Sightseeing",
     tid: "1h 30min +",
     location: new google.maps.LatLng(59.9270317,10.6986763),
+    scheduled: false,
+    fullDesc: "Sculpture park & museum displaying the works of Gustav Vigeland, plus temporary art exhibitions.",
+    address: "Nobels gate 32, 0268 Oslo",
+    link: "http://www.vigeland.museum.no/en/vigeland-park",
   }
   vikingmuseum = {
     objName: "vikingmuseum",
@@ -34,6 +42,10 @@ export class DataProvider {
     navbarColor: "Sightseeing",
     tid: "1h 30min +",
     location: new google.maps.LatLng(59.9049475,10.6822188),
+    scheduled: false,
+    fullDesc: "The Viking Ship Museum is located at Bygdøy in Oslo, Norway. It is part of the Museum of Cultural History of the University of Oslo, and houses archaeological finds from Tune, Gokstad, Oseberg and the Borre mound cemetery.",
+    address: "Huk Aveny 35, 0287 Oslo",
+    link: "https://www.khm.uio.no/besok-oss/vikingskipshuset/",
   }
   louisvuitton = {
     objName: "louisvuitton",
@@ -42,6 +54,10 @@ export class DataProvider {
     src: "assets/imgs/louis.jpg" ,
     navbarColor: "Shopping",
     location: new google.maps.LatLng(59.9121897,10.7401943),
+    scheduled: false,
+    fullDesc: "Louis Vuitton Malletier, commonly referred to as Louis Vuitton, or shortened to LV, is a French fashion house and luxury retail company founded in 1854 by Louis Vuitton.",
+    address: "Nedre Slottsgate 13, 0157 Oslo",
+    link: "https://www.louisvuitton.com/",
   }
   urmakerbjerke = {
     objName: "urmakerbjerke",
@@ -50,6 +66,10 @@ export class DataProvider {
     src: "assets/imgs/bjerke.jpg",
     navbarColor: "Shopping",
     location: new google.maps.LatLng(59.9120693,10.7401465),
+    scheduled: false,
+    fullDesc: "Urmaker Bjerke ble etablert i 1923. I over 90 år har vi vært en anerkjent og ledende leverandør av ur og smykker – til kunder som setter ekstra høye krav til kvalitet og service.",
+    address: "Karl Johans gate 31, 0159 Oslo",
+    link: "https://www.urmaker-bjerke.no/",
   }
   hermés = {
     objName: "hermés",
@@ -58,6 +78,10 @@ export class DataProvider {
     src:"assets/imgs/hermes.jpg" ,
     navbarColor: "Shopping",
     location: new google.maps.LatLng(59.911848,10.7397372),
+    scheduled: false,
+    fullDesc: "Hermès International S.A., or simply Hermès is a French high fashion luxury goods manufacturer established in 1837. It specializes in leather, lifestyle accessories, home furnishings, perfumery, jewellery, watches and ready-to-wear. Its logo, since the 1950s, is of a Duc carriage with horse.",
+    address: "Nedre Slottsgate 15, 0157 Oslo",
+    link: "https://www.hermes.com/no/en/",
   }
   gucci = {
     objName: "gucci",
@@ -66,6 +90,10 @@ export class DataProvider {
     src: "assets/imgs/gucci.jpg",
     navbarColor: "Shopping",
     location: new google.maps.LatLng(59.9119912,10.7413791),
+    scheduled: false,
+    fullDesc: "Luxury brand known for modern, Italian-crafted leather goods, apparel & accessories for men & women.",
+    address: "Nedre Slottsgate 8, 0157 Oslo",
+    link: "https://www.gucci.com/",
   }
   stenogstrøm = {
     objName: "stenogstrøm",
@@ -74,6 +102,10 @@ export class DataProvider {
     src:"assets/imgs/sten.jpg" ,
     navbarColor: "Shopping",
     location: new google.maps.LatLng(59.9118852,10.7408589),
+    scheduled: false,
+    fullDesc: "Steen & Strøm is a Scandinavian retail and real estate company that owns and operates 52 shopping centres in Norway, Sweden and Denmark. In 2006 the shopping centers had 3,300 lessees with total revenue of about NOK 40 billion.",
+    address: "Nedre Slottsgate 8, 0157 Oslo",
+    link: "http://www.steenogstromoslo.no/",
   }
   maemo = {
     objName: "maemo",
@@ -82,6 +114,10 @@ export class DataProvider {
     src: "assets/imgs/maemo.jpg" ,
     navbarColor: "Food",
     location: new google.maps.LatLng(59.9106324,10.758386),
+    scheduled: false,
+    fullDesc: "Chic, fine dining restaurant for seasonal, Norwegian menu with wine pairings, in minimalist setting.",
+    address: "Schweigaards gate 15B, 0191 Oslo",
+    link: "https://maaemo.no/",
 
   }
   kontrast = {
@@ -91,6 +127,10 @@ export class DataProvider {
     src: "assets/imgs/kontrast.jpg" ,
     navbarColor: "Food",
     location: new google.maps.LatLng(59.9229445,10.7489405),
+    scheduled: false,
+    fullDesc: "Kontrast is a Modern Scandinavian restaurant with a focus on using ingredients that are both local and at the peak of their season. Our main goals are to offer world class, organic and ethically sourced ingredients from within Norway and to showcase the farmers who produce them.",
+    address: "Maridalsveien 15a, 0175 Oslo",
+    link: "http://www.restaurant-kontrast.no/en/",
 
   }
   galt = {
@@ -100,6 +140,10 @@ export class DataProvider {
     src:"assets/imgs/galt.jpg" ,
     navbarColor: "Food",
     location: new google.maps.LatLng(59.916549,10.7113581),
+    scheduled: false,
+    fullDesc: "We’re a bunch of colleagues, having worked together at several restaurants, among them Restaurant Oscarsgate and Fauna. We’re altogether five co owners, working in the kitchen and the service.",
+    address: "Frognerveien 12, 0263 Oslo",
+    link: "http://www.galt.no/",
 
   }
   beijinghouse = {
@@ -109,6 +153,10 @@ export class DataProvider {
     src: "assets/imgs/beijing.jpg",
     navbarColor: "Food",
     location: new google.maps.LatLng(59.9170727,10.7395263),
+    scheduled: false,
+    fullDesc: "At Peking Sichuan you will find all the typical Chinese dishes from Sichuan (Szechuan) and Guangdong (Hong Kong). We have 100 tables in the restaurant and will gladly receive complete company orders (Reservations for Christmas, Confirmations, Weddings etc.).",
+    address: "Munchs gate 5, 0165 Oslo",
+    link: "http://beijinghouse.no/en/",
 
   }
   theater = {
@@ -118,6 +166,10 @@ export class DataProvider {
     src: "assets/imgs/theater.jpg",
     navbarColor: "Food",
     location: new google.maps.LatLng(59.9140427,10.7317023),
+    scheduled: false,
+    fullDesc: "Viennese-style, white-tablecloth cafe in venerable hotel, for brasserie menu & afternoon tea.",
+    address: "Stortingsgata 24-26, 0117 Oslo",
+    link: "https://www.theatercafeen.no/",
 
   }
 

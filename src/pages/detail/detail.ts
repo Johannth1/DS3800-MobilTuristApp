@@ -59,4 +59,15 @@ export class DetailPage {
       this.data.pushToSchedule(this.data.getObject(this.navParams.get("title")));
     }
   }
+  goToSchedule(){
+    this.navCtrl.push("SchedulePage");
+  }
+
+  goToInfo(){
+    this.navCtrl.push("InfoPage", this.data.getObject(this.navParams.get("title")));
+  }
+
+  goToHome(){
+    this.navCtrl.popToRoot()
+  }
 }
