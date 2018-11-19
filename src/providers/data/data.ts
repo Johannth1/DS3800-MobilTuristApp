@@ -262,7 +262,7 @@ setList(name:String){
       let items: Array<String> = [];
       items = this.scheduleList;
       for(var i=0;i<=items.length;i++){
-        if(items[i] === currentItem || items[i].title === currentItem.title){
+        if(items[i] === currentItem){ // || items[i].title === currentItem.title){
           this.scheduleList.splice(i, 1);
         }
       }
